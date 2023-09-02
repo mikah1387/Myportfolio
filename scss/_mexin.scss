@@ -27,17 +27,23 @@
     background: $backgound;
    width: $width;
    height: $height;
-   color: $color;
    font-weight: 500;
    border-radius: $radius;
    border: 2px solid $backgound;
    margin: 15px auto;
    transition: all 0.3s;
+   a{
+    color: $color;
+
+   }
    &:hover{
 
      background: transparent;
-     color: $backgound;
      border-color: $backgound;
+     a{
+      color: $backgound;
+
+     }
    }
 }
 

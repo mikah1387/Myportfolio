@@ -127,8 +127,8 @@ html {
 body {
   font-family: "Inter", sans-serif;
   position: relative;
-  color: white;
-  background: #010130;
+  color: #ffffff;
+  background: red;
   transition: 0.4s;
 }
 
@@ -341,17 +341,21 @@ header .backround .color3 {
   background: #ddf9c1;
   width: 60%;
   height: 40px;
-  color: #010130;
   font-weight: 500;
   border-radius: 20px;
   border: 2px solid #ddf9c1;
   margin: 15px auto;
   transition: all 0.3s;
 }
+.describ .mycard .btn a {
+  color: rgba(186, 183, 183, 0.8274509804);
+}
 .describ .mycard .btn:hover {
   background: transparent;
-  color: #ddf9c1;
   border-color: #ddf9c1;
+}
+.describ .mycard .btn:hover a {
+  color: #ddf9c1;
 }
 .describ .mycard .round {
   display: block;

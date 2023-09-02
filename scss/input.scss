@@ -93,8 +93,10 @@ html{
 body{
   font-family: $fontInter;
   position: relative;
-  color:white;
+  color:$white;
+  $blue-dark: red;
   background: $blue-dark;
+
   transition: 0.4s;
   
 }
@@ -104,6 +106,7 @@ body{
 
 a{
   text-decoration: none;
+  
 
 }
 header{
@@ -231,7 +234,6 @@ li{
 .home{
   
   position: relative;
-  // background:$blue-dark;
 }
 .describ{
  
@@ -372,8 +374,11 @@ li{
     }
     .btn{
 
-      @include btn($green,60%,40px,$blue-dark,20px)
- 
+      @include btn($green,60%,40px,$blue,20px);
+
+      //  a{
+      //   color: inherit;
+      //  }
      }
      .round{
       display: block;
@@ -1005,7 +1010,7 @@ li{
 
       
   }
-
+// *****Section tarif **********
   .container_tarif{
 
     width: 60%;
@@ -1105,6 +1110,7 @@ li{
       }
      }
   }
+// *****Section contact **********
  
   .container_contact{
     width: 60%;
