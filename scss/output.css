@@ -689,7 +689,7 @@ header .backround .color3 {
 .container_special .all-skill [class*=skill_]::before {
   content: " ";
   display: block;
-  background: center/contain no-repeat url(/images/Figma-logo.svg);
+  background: center/contain no-repeat url(./images/Figma-logo.svg);
   margin-bottom: 20px;
   width: 50px;
   height: 60px;
@@ -716,7 +716,7 @@ header .backround .color3 {
   opacity: 0;
 }
 .container_special .all-skill .skill_2::before {
-  background: center/contain no-repeat url(/images/sass-1.svg);
+  background: center/contain no-repeat url(./images/sass-1.svg);
   width: 60px;
   height: 70px;
 }
@@ -725,28 +725,28 @@ header .backround .color3 {
   transform: translateY(-150px);
 }
 .container_special .all-skill .skill_3::before {
-  background: center/contain no-repeat url(/images/logo-javascript.svg);
+  background: center/contain no-repeat url(./images/logo-javascript.svg);
 }
 .container_special .all-skill .skill_4 {
   opacity: 0;
   transform: translateX(100px);
 }
 .container_special .all-skill .skill_4::before {
-  background: center/contain no-repeat url(/images/php-1.svg);
+  background: center/contain no-repeat url(./images/php-1.svg);
 }
 .container_special .all-skill .skill_5 {
   transform: translate(-150px, -150px);
   opacity: 0;
 }
 .container_special .all-skill .skill_5::before {
-  background: center/contain no-repeat url(/images/symfony.svg);
+  background: center/contain no-repeat url(./images/symfony.svg);
 }
 .container_special .all-skill .skill_6 {
   transform: translateY(250px);
   opacity: 0;
 }
 .container_special .all-skill .skill_6::before {
-  background: center/contain no-repeat url(/images/mysql-logo.svg);
+  background: center/contain no-repeat url(./images/mysql-logo.svg);
 }
 
 .container_projects {
