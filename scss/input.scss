@@ -528,11 +528,11 @@ li{
   margin: 15rem auto 0px;
    @media screen and (max-width:1130px) {
     width: 90%;
-    margin-top: 38rem;
+    margin-top: 18rem;
 
    }
    @media screen and (max-width:400px) {
-    margin-top: 43rem;
+    margin-top: 20rem;
    }
    
    .presentation{
@@ -785,7 +785,7 @@ li{
 
         content: " ";
         display: block;
-        background: center / contain no-repeat url(./images/Figma-logo.svg);
+        background: center / contain no-repeat url(../images/Figma-logo.svg);
         margin-bottom: 20px;
         width: 50px;
         height: 60px;
@@ -814,7 +814,7 @@ li{
       opacity: 0;
       &::before{
 
-        background: center / contain no-repeat url(./images/sass-1.svg);
+        background: center / contain no-repeat url(../images/sass-1.svg);
         width: 60px;
         height: 70px;
       }
@@ -824,7 +824,7 @@ li{
       transform: translateY(-150px);
       &::before{
 
-        background: center / contain no-repeat url(./images/logo-javascript.svg);
+        background: center / contain no-repeat url(../images/logo-javascript.svg);
       }
      }
      .skill_4{
@@ -832,7 +832,7 @@ li{
       transform: translateX(100px);
       &::before{
 
-        background: center / contain no-repeat url(./images/php-1.svg);
+        background: center / contain no-repeat url(../images/php-1.svg);
       }
      }
      .skill_5{
@@ -841,7 +841,7 @@ li{
       opacity: 0;
       &::before{
 
-        background: center / contain no-repeat url(./images/symfony.svg);
+        background: center / contain no-repeat url(../images/symfony.svg);
       }
      }
      .skill_6{
@@ -849,7 +849,7 @@ li{
       opacity: 0;
       &::before{
 
-        background: center / contain no-repeat url(./images/mysql-logo.svg);
+        background: center / contain no-repeat url(../images/mysql-logo.svg);
       }
      }
 
