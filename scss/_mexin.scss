@@ -1,0 +1,85 @@
+@mixin transform($transform){
+ transform: $transform;
+ -webkit-transform: $transform ;
+ -ms-transform: $transform;
+}
+@mixin triangle( $seize :10px , $color: green){
+
+    &::after{
+
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: $seize solid $color;
+        border-left:$seize solid transparent ;
+        border-right:$seize solid transparent ;
+        position: absolute;
+        bottom: - $seize;
+        left: calc(50% - $seize);
+      }
+    
+}
+
+
+@mixin btn($backgound, $width, $height,$color,$radius){
+
+    display: block;
+    background: $backgound;
+   width: $width;
+   height: $height;
+   color: $color;
+   font-weight: 500;
+   border-radius: $radius;
+   border: 2px solid $backgound;
+   margin: 15px auto;
+   transition: all 0.3s;
+   &:hover{
+
+     background: transparent;
+     color: $backgound;
+     border-color: $backgound;
+   }
+}
+
+
+
+
+
+
+@function rem($seize, $base: 17){
+
+    @return  ($seize / $base) * 1rem ;
+}
+
+// @for $i from 1 through 4 {
+
+//    .m-#{$i} {
+//     margin : 0  $i* 1rem;
+//    }
+// }
+
+// $sections : chien, poisson, lion;
+// @debug $sections;
+
+// @each $section in $sections {
+   
+//   @if($section == chien)
+//    {
+//     .#{$section}{
+//       background:red ;
+//     } 
+//    }
+//    @if($section == poisson)
+//    {
+//     .#{$section}{
+//       background:green ;
+//     } 
+//    }
+//    @if($section == lion)
+//    {
+//     .#{$section}{
+//       background:coral ;
+//     } 
+//    }
+ 
+// }
