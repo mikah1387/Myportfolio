@@ -752,6 +752,15 @@ header .backround .color3 {
 .container_special .all-skill .skill_6::before {
   background: center/contain no-repeat url(../images/mysql-logo.svg);
 }
+.container_special .all-skill .skill_7::before {
+  background: center/contain no-repeat url(../images/wordpress-icon.svg);
+}
+.container_special .all-skill .skill_8::before {
+  background: center/contain no-repeat url(../images/react-2.svg);
+}
+.container_special .all-skill .skill_9::before {
+  background: center/contain no-repeat url(../images/html-1.svg);
+}
 
 .container_projects {
   width: 60%;
