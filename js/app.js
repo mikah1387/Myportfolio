@@ -2,7 +2,18 @@ let body = document.querySelector('body')
 let background1 = document.querySelector('.color1')
 let background2 = document.querySelector('.color2')
 let background3 = document.querySelector('.color3')
+let loader = document.querySelector('.preloader')
 
+window.addEventListener('load',function(){
+  
+  setTimeout(()=>{
+    loader.style.opacity='0';
+    }, 1500);
+  setTimeout(()=>{
+    loader.style.display='none';
+    }, 1600);
+  
+})
 background1.addEventListener('click', function(){
 
   body.style.backgroundColor = "#010130"
@@ -27,6 +38,7 @@ tl.to(".describ .p", {
    y:100,
   
    opacity: 1,
+   delay:1.5,
    duration:1.2,
   //  ease: "power4"
 

@@ -52,7 +52,7 @@ table {
   border-spacing: 0;
 }
 
-.container_contact .notion, .describ .mycard .social-media li {
+.container_contact .notion, .describ .mycard .social-media li, .preloader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,8 +128,48 @@ body {
   font-family: "Inter", sans-serif;
   position: relative;
   color: #ffffff;
+  overflow-x: hidden;
   background: #010130;
   transition: 0.4s;
+}
+
+.preloader {
+  background: #010130;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  transition: 0.5s ease-out;
+  z-index: 100;
+}
+.preloader .dot {
+  position: relative;
+  width: calc(100px + 6vw);
+  height: calc(100px + 6vw);
+}
+.preloader .dot::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px white;
+  animation: loading 2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 3px 2px rgb(122, 179, 73);
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 3px 2px #f7f7f7;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 3px 2px #022960;
+  }
 }
 
 a {
@@ -145,17 +185,15 @@ header {
   justify-content: space-between;
 }
 header .logo {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 2px 15px;
-  width: 80px;
-  height: 80px;
+  margin: 15px 15px;
+  width: calc(40px + 2vw);
+  height: calc(40px + 2vw);
   position: relative;
 }
 header .logo img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: calc(5px + 0.5vw);
 }
 @media screen and (max-width: 380px) {
   header .logo {
@@ -303,7 +341,7 @@ header .backround .color3 {
   transition: transform 0.3s;
 }
 .describ .mycard .myp {
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(0.3rem + 1vw);
   font-weight: 300;
   margin: 20px 30px;
   color: white;
@@ -442,7 +480,7 @@ header .backround .color3 {
   opacity: 0;
   border: 1px solid rgba(186, 183, 183, 0.8274509804);
   width: 50px;
-  z-index: 100;
+  z-index: 99;
   border-radius: 28px;
   animation: switchon 1s 3s;
   transition: color 0.3s;
