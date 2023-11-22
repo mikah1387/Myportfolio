@@ -96,14 +96,18 @@ body{
   position: relative;
   color:$white;
   overflow-x: hidden;
-  
-  background: $blue-dark;
+  width: 100vw;
+  background:$blue-dark;
   
   transition: 0.4s;
   
 }
 
+section{
+  
+  overflow-x: hidden;
 
+}
 .preloader{
 
   background: $blue-dark;

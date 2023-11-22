@@ -129,8 +129,13 @@ body {
   position: relative;
   color: #ffffff;
   overflow-x: hidden;
+  width: 100vw;
   background: #010130;
   transition: 0.4s;
+}
+
+section {
+  overflow-x: hidden;
 }
 
 .preloader {
